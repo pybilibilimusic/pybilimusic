@@ -1,0 +1,2 @@
+[console_scripts]
+pybilibilimusic = cli.src.main_CLI:main

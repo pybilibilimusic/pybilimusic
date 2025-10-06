@@ -1,0 +1,168 @@
+Metadata-Version: 2.4
+Name: pybilibilimusic
+Version: 1.0.0
+Summary: A command-line tool to download Bilibili videos and convert them to MP3 format
+Author-email: Minecraft <shanghai_chengren@126.com>
+License: MIT
+Project-URL: Homepage, https://github.com/pybilibilimusic/pybilimusic
+Project-URL: Repository, https://github.com/pybilibilimusic/pybilimusic
+Project-URL: Issues, https://github.com/pybilibilimusic/pybilimusic/issues
+Keywords: bilibili,download,video,mp3,converter
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: beautifulsoup4>=4.12.2
+Requires-Dist: requests>=2.31.0
+Requires-Dist: rich>=13.7.0
+Requires-Dist: urllib3>=2.0.0
+Dynamic: license-file
+Dynamic: requires-python
+
+# Bilibili Music Downloader
+
+A command-line tool to download Bilibili videos and convert them to MP3 format, developed in **Python**.
+
+[![Python](https://img.shields.io/badge/Python-3.7%2B-blue?logo=python)](https://www.python.org/)
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+![Status](https://img.shields.io/badge/Status-Stable-green)
+
+## ✨ Features
+
+- **🎶 Bilibili Video Search**: Search for videos on Bilibili by song name
+- **📥 Video Download**: Download videos in MP4 format from Bilibili
+- **🎵 Audio Conversion**: Convert downloaded videos to MP3 format using FFmpeg
+- **⌨️ Interactive CLI**: User-friendly command-line interface with automatic selection
+- **📊 Progress Display**: Real-time download progress with rich progress bars
+
+*Looking for the GUI version? It's in development and will be released soon!*
+
+## 🎯 Available Versions
+
+### 🔧 CLI Version (Current) - `pybilibili_CLI`
+- **Status**: ✅ Stable
+- **Description**: Command-line tool to download Bilibili videos and convert to MP3
+- **Download**: [Latest Release](https://github.com/pybilibilimusic/pybilimusic/releases/latest)
+
+### 🖥️ GUI Version (Planned)
+- **Status**: 🚧 In Development
+- **Description**: Graphical user interface with enhanced features
+- **ETA**: Coming Soon
+
+## 🚀 Quick Start (CLI Version)
+
+### Prerequisites
+- Python 3.7+
+- FFmpeg (required for audio conversion)
+
+### Installation
+```bash
+# 1. Clone this repository
+git clone https://github.com/pybilibilimusic/pybilimusic.git
+
+# 2. Enter the project directory
+cd pybilimusic
+
+# 3. Install dependencies
+pip install -r requirements.txt
+
+# 4. Run the main program (choose one method)
+python cli/src/main_CUI.py
+
+# OR install in editable mode and run as command
+pip install -e .
+pybilibili_CLI
+```
+
+## 📋 Usage
+1.Run the program: python cli/src/main_CUI.py or pybilibili_CLI
+
+2.Enter the song name you want to download (case-sensitive)
+
+3.View the search results and select a video (1-5)
+
+4.Wait for the download and conversion to complete
+
+5.Find your MP3 file in the temp/ directory
+
+##  📦 Project Structure (CLI Version)
+pybilibilimusic/
+├── cli/                                                          # CLI version code
+│   ├── src/
+│   │     ├──__init__.py
+│   │     ├──main_CLI.py                               # Main CLI interface
+│   │     ├──song_search.py                         # Bilibili video search
+│   │     ├──download_mp4.py                    # Video download functionality
+│   └──└── generate_w_rid_and_wts.py    # Bilibili API authentication
+├── gui/                                                       # GUI version (future)
+├──  .gitignore                                             # Git ignore rules
+├── LICENSE                                                # MIT License
+├── pyproject.toml                                      # Modern Python project configuration
+├── README.md                                         # Documentation
+├── requirements.txt                                  # Python dependencies
+└── setup.py                                               # Package configuration
+
+## 🔧 Dependencies
+1.beautifulsoup4: HTML parsing for video search
+
+2.requests: HTTP requests for API calls
+
+3.rich: Beautiful progress bars and CLI formatting
+
+4.urllib3: HTTP client library
+
+## ⚠️ Important Notes
+1.This program requires FFmpeg to be installed on your system for audio conversion
+
+2.Please respect copyright and use this tool responsibly
+
+3.All video and music copyrights belong to the original creators
+
+4.This tool is for personal use only
+
+## 🐛 Troubleshooting
+### FFmpeg Not Found
+If you encounter FFmpeg errors, please install FFmpeg:
+
+**Windows:**
+1. download [FFmpeg](https://ffmpeg.org/download.html)
+2. Unzip and add the `bin` folder to the system PATH
+3. Or place ffmpeg.exe in the same directory as the program.
+
+**macOS:**
+```bash
+brew install ffmpeg
+```
+**Linux (Ubuntu/Debian):**
+```bash
+sudo apt update
+sudo apt install ffmpeg
+```
+**Linux (CentOS/RHEL):**
+```bash
+sudo yum install epel-release
+sudo yum install ffmpeg
+```
+## Network Issues
+If downloads fail, check your network connection and ensure you can access www.bilibili.com
+
+## 🤝 How to Contribute
+We welcome contributions! Here's how you can help:
+
+1.Report bugs or suggest features: [GitHub Issues](https://github.com/pybilibilimusic/pybilimusic/issues)
+
+2.Submit code improvements: Fork this project and create a Pull Request
+
+3.Improve documentation: Help make this README better
+
+## 📄 License
+This project is licensed under the MIT License.

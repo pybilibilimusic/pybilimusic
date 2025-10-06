@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+cli/src/pybilibilimusic.egg-info/PKG-INFO
+cli/src/pybilibilimusic.egg-info/SOURCES.txt
+cli/src/pybilibilimusic.egg-info/dependency_links.txt
+cli/src/pybilibilimusic.egg-info/entry_points.txt
+cli/src/pybilibilimusic.egg-info/requires.txt
+cli/src/pybilibilimusic.egg-info/top_level.txt
+cli/src/pybilibilimusic.egg-info/PKG-INFO
+cli/src/pybilibilimusic.egg-info/SOURCES.txt
+cli/src/pybilibilimusic.egg-info/dependency_links.txt
+cli/src/pybilibilimusic.egg-info/entry_points.txt
+cli/src/pybilibilimusic.egg-info/requires.txt
+cli/src/pybilibilimusic.egg-info/top_level.txt
